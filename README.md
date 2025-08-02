@@ -1,3 +1,2 @@
 # wesmp-origins
-Custom Origins for the WESMP
-Currently working on branch protection rules.
+This repository contains any custom json or functions for the custom origins on the WESMP.

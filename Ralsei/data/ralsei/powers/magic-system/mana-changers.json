@@ -1,0 +1,52 @@
+{
+    "name": "mana changers",
+    "description": "bad name; things that allows mana to change. (need to fix potion... eventually)",
+    "hidden": true,
+    "type": "origins:multiple",
+    "mana_glowstone_dust": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "ralsei:magic-system/mana",
+            "comparison": "<",
+            "compare_to": 140
+        },
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "ralsei:magic-system/mana",
+                    "change": 35,
+                    "operation": "add"
+                },
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:glowstone_dust"
+            }
+        },
+        "trigger": "instant",
+        "priority": 0
+    },
+    "mana_callback_reset": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:change_resource",
+            "resource": "ralsei:magic-system/mana",
+            "change": 0,
+            "operation": "set"
+        },
+        "execute_chosen_when_orb": false
+    }
+}

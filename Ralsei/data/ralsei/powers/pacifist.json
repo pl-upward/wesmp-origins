@@ -1,0 +1,25 @@
+{
+    "name": "Pacifist",
+    "description": "You have the innate ability to pacify all beings around you (coming soon TM). However, you have 9 hearts of HP and deal -50%.",
+    "loading_priority": 0,
+    "type": "origins:multiple",
+    "hp": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "addition",
+            "value": -2,
+            "name": "Pacifist"
+        },
+        "update_health": true
+    },
+    "attack_dmg": {
+        "type": "origins:modify_attribute",
+        "attribute": "minecraft:generic.attack_damage",
+        "modifier": {
+            "operation": "multiply_base_additive",
+            "value": -0.5,
+            "name": "Pacifist"
+        }
+    }
+}

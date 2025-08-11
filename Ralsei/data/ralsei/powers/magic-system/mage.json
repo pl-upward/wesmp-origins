@@ -1,0 +1,5 @@
+{
+    "name": "Mage",
+    "description": "You are a mage who can cast spells! To cast spells, however, a sufficient amount mana will be required for each cast. Mana can be aquired by stuffing your face with glowstone dust for up to a total of 140 mana.",
+    "type": "origins:simple"
+}

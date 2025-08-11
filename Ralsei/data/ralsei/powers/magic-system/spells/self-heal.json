@@ -1,6 +1,22 @@
 {
     "name": "Heal Prayer",
     "description": "Heal yourself for 4 hearts.\nCost: 45 mana points.",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:resource",
+                "resource": "ralsei:magic-system/mana",
+                "comparison": ">",
+                "compare_to": 45
+            },
+            {
+                "type": "origins:relative_health",
+                "comparison": "<",
+                "compare_to": 1
+            }
+        ]
+    },
     "type": "origins:active_self",
     "entity_action": {
         "type": "origins:and",

@@ -1,6 +1,22 @@
 {
     "name": "Multi Heal",
     "description": "Heal all players in a 3x3 radius around you for 3 hearts.\nCost: 70 mana points.",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:resource",
+                "resource": "ralsei:magic-system/mana",
+                "comparison": ">=",
+                "compare_to": 70
+            },
+            {
+                "type": "origins:relative_health",
+                "comparison": "<",
+                "compare_to": 1
+            }
+        ]
+    },
     "type": "origins:active_self",
     "entity_action": {
         "type": "origins:area_of_effect",

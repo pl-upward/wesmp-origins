@@ -1,0 +1,31 @@
+{
+    "name": "mana",
+    "description": "mana display that also acts as a reference to the resource.",
+    "hidden": true,
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:gamemode",
+                "gamemode": "survival"
+            },
+            {
+                "type": "origins:gamemode",
+                "gamemode": "adventure"
+            }
+        ]
+    },
+    "type": "origins:resource",
+    "min": 0,
+    "max": 140,
+    "start_value": 0,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "bar_index": 18,
+        "condition": {
+            "type": "origins:constant",
+            "value": true
+        }
+    }
+}

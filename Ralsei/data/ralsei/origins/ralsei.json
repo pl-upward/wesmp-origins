@@ -1,0 +1,16 @@
+{
+    "name": "Ralsei",
+    "description": "Ralsei Deltarune",
+    "powers": [
+        "ralsei:pacifist",
+        "ralsei:magic-system/mage",
+        "ralsei:magic-system/mana",
+        "ralsei:magic-system/mana-changers",
+        "ralsei:magic-system/spells/self-heal",
+        "ralsei:magic-system/spells/multi-heal"
+    ],
+    "icon": {
+        "item": "minecraft:dragon_breath"
+    },
+    "impact": 0
+}

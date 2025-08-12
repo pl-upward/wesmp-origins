@@ -1,0 +1,57 @@
+{
+    "name": "Heal Prayer",
+    "description": "Heal yourself for 4 hearts.\nCost: 45 mana points.",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:resource",
+                "resource": "ralsei:magic-system/mana",
+                "comparison": ">",
+                "compare_to": 45
+            },
+            {
+                "type": "origins:relative_health",
+                "comparison": "<",
+                "compare_to": 1
+            }
+        ]
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:change_resource",
+                "resource": "ralsei:magic-system/mana",
+                "change": -45,
+                "operation": "add"
+            },
+            {
+                "type": "origins:heal",
+                "amount": 8
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.amethyst_block.chime",
+                "volume": 100,
+                "pitch": 1.8
+            },
+            {
+                "type": "origins:spawn_particles",
+                "particle": "minecraft:electric_spark",
+                "count": 12,
+                "speed": 0
+            }
+        ]
+    },
+    "cooldown": 60,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 9
+    },
+    "key": {
+        "key": "key.origins.primary_active"
+    }
+}

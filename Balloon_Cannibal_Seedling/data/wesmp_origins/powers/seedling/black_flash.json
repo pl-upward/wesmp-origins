@@ -1,0 +1,75 @@
+{
+    "name": "Fall Damage Black Flash",
+    "description": "Activate your BLACK... FLASH! to reset your fall distance and gain a temporary damage bonus.",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:set_fall_distance",
+                "fall_distance": 0
+            },
+            {
+                "type": "origins:spawn_particles",
+                "particle": "minecraft:squid_ink",
+                "count": 3,
+                "spread": {
+                    "x": 0.2,
+                    "y": 0,
+                    "z": 0.2
+                },
+                "offset_y": -1
+            },
+            {
+                "type": "origins:spawn_particles",
+                "particle": {
+                    "type": "minecraft:dust_color_transition",
+                    "params": "1 1 1 1 1 0 0 ~ ~1 ~ 0 0 0 0 7"
+                },
+                "count": 7,
+                "speed": 0.5,
+                "spread": {
+                    "x": 0.2,
+                    "y": 0,
+                    "z": 0.2
+                },
+                "offset_y": -1
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.lightning_bolt.impact",
+                "volume": 1,
+                "pitch": 2
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.lightning_bolt.thunder",
+                "volume": 1,
+                "pitch": 2
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "tellraw @a [\"\",{\"text\":\"BLACK... FLASH!\",\"color\":\"#990000\",\"bold\":true,\"italic\":true}]"
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:strength",
+                    "duration": 20,
+                    "amplifier": 2,
+                    "show_particles": true,
+                    "show_icon": true
+                }
+            }
+        ]
+    },
+    "cooldown": 200,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 15
+    },
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
+}

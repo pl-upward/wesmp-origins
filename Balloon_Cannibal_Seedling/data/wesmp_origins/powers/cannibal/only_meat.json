@@ -9,7 +9,7 @@
                 "inverted": true,
                 "type": "origins:ingredient",
                 "ingredient": {
-                    "tag": "prenroke_custom_origins:cannibal_meats"
+                    "tag": "wesmp_origins:cannibal_meats"
                 }
             },
             {

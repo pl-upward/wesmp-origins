@@ -1,0 +1,15 @@
+{
+	"powers": [
+        "redwood:geto/mob_capture",
+        "redwood:geto/total_control",
+        "redwood:geto/repulsed",
+        "redwood:geto/exhausted"
+	],
+	"icon": {
+        "item": "minecraft:spawner"
+        },
+	"order": 10,
+	"impact": 3,
+	"name": "Suguru Geto",
+	"description": "Born with the Curse Manipulation technique, Suguru Geto lives in a cycle of exorcising and consuming."
+}

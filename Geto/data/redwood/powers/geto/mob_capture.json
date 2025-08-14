@@ -1,0 +1,397 @@
+{
+    "type": "origins:multiple",
+    "prevent_mob_use": {
+        "type": "origins:prevent_entity_use",
+        "bientity_condition": {
+            "type": "apoli:target_condition",
+            "condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:health",
+                                "comparison": "<=",
+                                "compare_to": 10
+                            },
+                            {
+                                "type": "origins:command",
+                                "command": "execute if entity @s[team=geto.controlled]",
+                                "comparison": "==",
+                                "compare_to": 1
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:player",
+                        "inverted": true
+                    },
+                    {
+                        "type": "origins:living"
+                    }
+                ]
+            }
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "item_condition": {
+                        "type": "apoli:empty"
+                    },
+                    "equipment_slot": "mainhand"
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle_glowing"
+                }
+            ]
+        }
+    },
+    "capture_mob": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:raycast",
+            "distance": 5,
+            "block": true,
+            "entity": true,
+            "shape_type": "visual",
+            "fluid_handling": "none",
+            "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "function redwood:geto/capture_mob"
+                        }
+                    ]
+                }
+            },
+            "bientity_condition": {
+                "type": "apoli:target_condition",
+                "condition": {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:or",
+                            "conditions": [
+                                {
+                                    "type": "origins:health",
+                                    "comparison": "<=",
+                                    "compare_to": 10
+                                },
+                                {
+                                    "type": "origins:command",
+                                    "command": "execute if entity @s[team=geto.controlled]",
+                                    "comparison": "==",
+                                    "compare_to": 1
+                                }
+                            ]
+                        },
+                        {
+                            "type": "origins:entity_type",
+                            "entity_type": "minecraft:player",
+                            "inverted": true
+                        },
+                        {
+                            "type": "origins:living"
+                        }
+                    ]
+                }
+            },
+            "command_step": 0.1
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "item_condition": {
+                        "type": "apoli:empty"
+                    },
+                    "equipment_slot": "mainhand"
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle_glowing"
+                }
+            ]
+        },
+        "key": "key.use"
+    },
+    "change_selection": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:sneaking",
+                "inverted": true
+            },
+            "if_action": {
+                "type": "apoli:execute_command",
+                "command": "function redwood:geto/selected_id"
+            },
+            "else_action": {
+                "type": "origins:execute_command",
+                "command": "function redwood:geto/recapture_all_mobs"
+            }
+        },
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "cooldown": 0
+    },
+    "summon_mob": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:sneaking",
+                "inverted": true
+            },
+            "if_action": {
+                "type": "apoli:execute_command",
+                "command": "function redwood:geto/summon_mob"
+            },
+            "else_action": {
+                "type": "apoli:execute_command",
+                "command": "function redwood:geto/summon_all_mobs"
+            }
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        },
+        "cooldown": 1
+    },
+    "team_apply": {
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "team join geto.controlled @s"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players set @s geto.id 0"
+                }
+            ]
+        },
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "team leave @s"
+        },
+        "execute_chosen_when_orb": true
+    },
+    "glowing_capturable": {
+        "type": "origins:entity_glow",
+        "bientity_condition": {
+            "type": "origins:can_see"
+        },
+        "entity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:health",
+                            "comparison": "<=",
+                            "compare_to": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:entity_type",
+                    "entity_type": "minecraft:player",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:living"
+                }
+            ]
+        },
+        "use_teams": false,
+        "red": 0.0,
+        "green": 0.0,
+        "blue": 0.0,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle_glowing"
+        }
+    },
+    "glowing_captured": {
+        "type": "origins:entity_glow",
+        "bientity_condition": {
+            "type": "origins:can_see"
+        },
+        "entity_condition": {
+            "type": "origins:air",
+            "comparison": "==",
+            "compare_to": 4481
+        },
+        "use_teams": false,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle_glowing"
+        }
+    },
+    "team-air": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute as @e[team=geto.controlled,type=!player] run data modify entity @s Air set value 4481s"
+        }
+    },
+    "health_message": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:raycast",
+            "distance": 5,
+            "block": true,
+            "entity": true,
+            "shape_type": "visual",
+            "fluid_handling": "none",
+            "bientity_action": {
+                "type": "apoli:target_action",
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "function redwood:geto/health_message"
+                }
+            },
+            "bientity_condition": {
+                "type": "apoli:target_condition",
+                "condition": {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:health",
+                            "comparison": ">",
+                            "compare_to": 10
+                        },
+                        {
+                            "type": "origins:entity_type",
+                            "entity_type": "minecraft:player",
+                            "inverted": true
+                        },
+                        {
+                            "type": "origins:command",
+                            "command": "execute if entity @s[team=geto.controlled]",
+                            "comparison": "==",
+                            "compare_to": 0
+                        },
+                        {
+                            "type": "origins:health",
+                            "comparison": "!=",
+                            "compare_to": 0
+                        }
+                    ]
+                }
+            },
+            "command_step": 0.1
+        },
+        "key": "key.use",
+        "condition": {
+            "type": "origins:equipped_item",
+            "item_condition": {
+                "type": "apoli:empty"
+            },
+            "equipment_slot": "mainhand"
+        }
+    },
+    "toggle_glowing": {
+        "type": "origins:toggle",
+        "active_by_default": true,
+        "key": {
+            "key": "key.saveToolbarActivator"
+        }
+    },
+
+    "ride_mob": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:raycast",
+            "distance": 5,
+            "block": true,
+            "entity": true,
+            "shape_type": "visual",
+            "fluid_handling": "none",
+            "bientity_action": {
+                "type": "origins:mount"
+            },
+            "bientity_condition": {
+                "type": "apoli:target_condition",
+                "condition": {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:command",
+                            "command": "execute if entity @s[team=geto.controlled]",
+                            "comparison": "==",
+                            "compare_to": 1
+                        },
+                        {
+                            "type": "origins:entity_type",
+                            "entity_type": "minecraft:player",
+                            "inverted": true
+                        },
+                        {
+                            "type": "origins:living"
+                        }
+                    ]
+                }
+            },
+            "command_step": 0.1
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "item_condition": {
+                        "type": "apoli:empty"
+                    },
+                    "equipment_slot": "mainhand"
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle_glowing",
+                    "inverted": true
+                }
+            ]
+        },
+        "key": "key.use"
+    },
+
+
+
+    "name": "Mob Manipulation",
+    "description": "You can capture and resummon mobs you've defeated.",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Capture Mobs with [Right Click] when they are on 10 or less health. \nCycle through captured mobs with your secondary ability key.\nSummon selected mob with your primary ability key. \nToggle capture with load toolbar activator."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "Mobs you can capture are highlighted black.\nMobs you have control over are highlighed white."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "To ride a mob, toggle capture off then use [Right Click] on a controlled mob with an empty hand."
+        }
+    ]
+}

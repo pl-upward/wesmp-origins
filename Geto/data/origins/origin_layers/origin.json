@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "origins": [
+    "redwood:geto"
+  ],
+  "missing_description": "Wow you forgot a description",
+  "missing_name": "Wow you forgot a name"
+}

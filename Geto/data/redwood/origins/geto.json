@@ -3,7 +3,8 @@
         "redwood:geto/mob_capture",
         "redwood:geto/total_control",
         "redwood:geto/repulsed",
-        "redwood:geto/exhausted"
+        "redwood:geto/exhausted",
+		"redwood:geto/no_death"
 	],
 	"icon": {
         "item": "minecraft:spawner"

@@ -1,0 +1,27 @@
+{
+    "name": "Carnivorous",
+    "description": "You can eat basic meat. You recieve no saturation.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "inverted": true,
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "prenroke_custom_origins:cannibal_meats"
+                }
+            },
+            {
+                "type": "origins:food"
+            },
+            {
+                "inverted": true,
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "origins:ignore_diet"
+                }
+            }
+        ]
+    }
+}

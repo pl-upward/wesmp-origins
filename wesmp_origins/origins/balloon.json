@@ -1,0 +1,19 @@
+{
+    "name": "Balloon",
+    "description": "An extremely light creature that can store hot air like a balloon.",
+    "powers": [
+        "wesmp_origins:balloon/airflow_dependent",
+        "wesmp_origins:balloon/balloon_size",
+        "wesmp_origins:balloon/change_biome",
+        "wesmp_origins:balloon/dolphin_grace",
+        "wesmp_origins:balloon/high_body_temp",
+        "wesmp_origins:balloon/hollow_bones",
+        "wesmp_origins:balloon/hot_air"
+    ],
+    "icon": {
+        "item": "minecraft:white_wool",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 3
+}

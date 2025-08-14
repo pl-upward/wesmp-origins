@@ -1,0 +1,12 @@
+{
+    "name": "Airflow-dependent",
+    "description": "You need better airflow for your balloon-like structure. Your bed must be above y 62.",
+    "type": "origins:prevent_sleep",
+    "block_condition": {
+        "type": "origins:height",
+        "comparison": "<",
+        "compare_to": 62
+    },
+    "message": "The airflow isn't good enough...",
+    "set_spawn_point": true
+}

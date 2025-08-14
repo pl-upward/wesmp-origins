@@ -1,0 +1,14 @@
+{
+    "name": "Low Density",
+    "description": "You take greatly reduced fall damage and are slightly smaller.",
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+        "type": "origins:execute_command",
+        "command": "function wesmp_origins:size_funcs/size_seedling"
+    },
+    "execute_chosen_when_orb": true,
+    "entity_action_lost": {
+        "type": "origins:execute_command",
+        "command": "function wesmp_origins:size_funcs/unsize"
+    }
+}

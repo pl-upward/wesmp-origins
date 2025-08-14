@@ -1,0 +1,28 @@
+{
+    "name": "Hollow Bones",
+    "description": "Your bones are hollow! You cannot sink in water.",
+    "type": "origins:multiple",
+    "ignore_water": {
+        "type": "origins:walk_on_fluid",
+        "fluid": "minecraft:water"
+    },
+    "levitation": {
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        },
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 1,
+        "duration_per_stack": 20,
+        "tick_rate": 10,
+        "effect": {
+            "effect": "minecraft:levitation",
+            "duration": 100,
+            "amplifier": 1,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }
+    }
+}

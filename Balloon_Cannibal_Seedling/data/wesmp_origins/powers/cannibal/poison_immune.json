@@ -1,0 +1,9 @@
+{
+    "name": "Iron Gut",
+    "description": "You are immune to poison and hunger.",
+    "type": "origins:effect_immunity",
+    "effects": [
+        "minecraft:poison",
+        "minecraft:hunger"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "pack": {
+        "name": "WESMP Custom Origins",
+        "id": "wesmp_origins",
+        "pack_format": 15,
+        "version": "1.0.0",
+        "authors": [
+            "pl-upward"
+        ],
+        "description": "Custom origins for the WESMP"
+    }
+}

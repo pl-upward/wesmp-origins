@@ -1,0 +1,91 @@
+{
+    "name": "Frenzy",
+    "description": "Go into a feeding frenzy, consuming 4 points of hunger to gain strength and resistance. Must be above 4 hunger to activate.",
+    "condition": {
+        "type": "origins:food_level",
+        "comparison": ">=",
+        "compare_to": 8
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:apply_effect",
+                "effects": [
+                    {
+                        "effect": "minecraft:strength",
+                        "duration": 600,
+                        "amplifier": 0,
+                        "is_ambient": true,
+                        "show_particles": false,
+                        "show_icon": false
+                    },
+                    {
+                        "effect": "minecraft:resistance",
+                        "duration": 600,
+                        "amplifier": 0,
+                        "is_ambient": true,
+                        "show_particles": false,
+                        "show_icon": false
+                    }
+                ]
+            },
+            {
+                "type": "origins:grant_power",
+                "power": "prenroke_custom_origins:cannibal/frenzy_effects",
+                "source": "0"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "entity.warden.roar",
+                "volume": 4,
+                "pitch": 1
+            },
+            {
+                "type": "origins:delay",
+                "action": {
+                    "type": "origins:play_sound",
+                    "sound": "block.sculk_shrieker.shriek",
+                    "volume": 4,
+                    "pitch": 1
+                },
+                "ticks": 5
+            },
+            {
+                "type": "origins:delay",
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:revoke_power",
+                            "power": "prenroke_custom_origins:cannibal/frenzy_effects",
+                            "source": "0"
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "entity.sniffer.death",
+                            "volume": 1,
+                            "pitch": 1
+                        }
+                    ]
+                },
+                "ticks": 600
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 30
+            }
+        ]
+    },
+    "cooldown": 600,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "bar_index": 22,
+        "inverted": true
+    },
+    "key": {
+        "key": "key.origins.primary_active"
+    }
+}

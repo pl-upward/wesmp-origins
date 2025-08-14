@@ -1,0 +1,49 @@
+{
+    "name": "Overheat",
+    "description": "Superheat your body, increasing your swimming speed but consuming more hunger.",
+    "hidden": true,
+    "type": "origins:multiple",
+    "effect": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "wesmp_origins:balloon/dolphin_grace_toggle"
+        },
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 1,
+        "max_stacks": 1,
+        "duration_per_stack": 20,
+        "tick_rate": 10,
+        "effect": {
+            "effect": "minecraft:dolphins_grace",
+            "duration": 20,
+            "amplifier": 2,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        }
+    },
+    "hunger": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "wesmp_origins:balloon/dolphin_grace_toggle"
+        },
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 1
+        }
+    },
+    "toggle": {
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": ">=",
+            "compare_to": 6
+        },
+        "type": "origins:toggle",
+        "active_by_default": true,
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "retain_state": true
+    }
+}

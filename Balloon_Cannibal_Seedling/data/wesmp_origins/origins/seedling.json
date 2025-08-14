@@ -1,0 +1,18 @@
+{
+    "name": "Seedling",
+    "description": "A little seed person from a faraway land.",
+    "powers": [
+        "wesmp_origins:seedling/keep_inventory",
+        "wesmp_origins:seedling/dirt_eater_desc",
+        "wesmp_origins:seedling/black_flash",
+        "origins:climbing",
+        "wesmp_origins:seedling/dirt_eater",
+        "wesmp_origins:seedling/seedling_size"
+    ],
+    "icon": {
+        "item": "minecraft:sunflower",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 3
+}

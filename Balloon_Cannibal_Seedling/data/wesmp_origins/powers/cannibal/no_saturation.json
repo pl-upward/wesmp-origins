@@ -1,0 +1,10 @@
+{
+    "name": "no_saturation",
+    "description": "testr",
+    "hidden": true,
+    "type": "origins:modify_food",
+    "saturation_modifier": {
+        "operation": "set_base",
+        "value": 0
+    }
+}

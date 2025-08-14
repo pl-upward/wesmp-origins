@@ -1,0 +1,19 @@
+{
+    "name": "Overfeed",
+    "description": "When at full hunger, gain one heart upon hitting a creature.",
+    "hidden": true,
+    "condition": {
+        "type": "origins:food_level",
+        "comparison": "==",
+        "compare_to": 20
+    },
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "origins:actor_action",
+        "action": {
+            "type": "origins:heal",
+            "amount": 2
+        }
+    },
+    "cooldown": 1
+}

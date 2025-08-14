@@ -1,0 +1,35 @@
+{
+    "name": "High Body Temperature",
+    "description": "You lose more hunger in cold biomes and can only eat meat.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:food"
+            },
+            {
+                "inverted": true,
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:meat"
+                    },
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "origins:meats"
+                        }
+                    }
+                ]
+            },
+            {
+                "inverted": true,
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "origins:ignore_diet"
+                }
+            }
+        ]
+    }
+}

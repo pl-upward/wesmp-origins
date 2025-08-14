@@ -1,0 +1,8 @@
+{
+    "origins": [
+        "wesmp_origins:balloon",
+        "wesmp_origins:cannibal",
+        "wesmp_origins:seedling"
+    ],
+    "enabled": true
+}

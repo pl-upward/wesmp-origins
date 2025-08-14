@@ -1,0 +1,9 @@
+{
+    "name": "death immunity",
+    "description": "getos dont die because theyre computer fucking sucks",
+    "type": "origins:prevent_death",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "tp 6 101 6"
+    }
+}

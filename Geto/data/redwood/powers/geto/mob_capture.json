@@ -381,7 +381,7 @@
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Capture Mobs with [Right Click] when they are on 10 or less health. \nCycle through captured mobs with your secondary ability key.\nSummon selected mob with your primary ability key. \nToggle capture with load toolbar activator."
+            "text": "Capture Mobs with [Right Click] when they are on 10 or less health. \nCycle through captured mobs with your secondary ability key.\nSummon selected mob with your primary ability key. \nToggle capture Save Hotbar Activator."
         },
         {
             "type": "origins:tooltip",

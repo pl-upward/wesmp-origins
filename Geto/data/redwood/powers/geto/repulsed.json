@@ -1,0 +1,5 @@
+{
+    "type": "origins:simple",
+    "name": "Repulsed",
+    "description": "Every time you absorb a new mob, you experience nausea."
+}

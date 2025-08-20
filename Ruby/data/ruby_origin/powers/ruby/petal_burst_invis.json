@@ -1,0 +1,8 @@
+{
+    "name": "petal_burst_invis",
+    "description": "description",
+    "hidden": true,
+    "type": "origins:invisibility",
+    "render_armor": false,
+    "render_outline": false
+}

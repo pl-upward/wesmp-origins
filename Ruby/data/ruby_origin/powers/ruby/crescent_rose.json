@@ -1,0 +1,107 @@
+{
+    "name": "Crescent Rose",
+    "description": "You deal more damage with hoes.",
+    "type": "origins:multiple",
+    "wood_hoe": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:wooden_hoe"
+                }
+            }
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "addition",
+            "value": 3
+        }
+    },
+    "stone_hoe": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:stone_hoe"
+                }
+            }
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "addition",
+            "value": 4
+        }
+    },
+    "iron_hoe": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:iron_hoe"
+                }
+            }
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "addition",
+            "value": 5
+        }
+    },
+    "golden_hoe": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:golden_hoe"
+                }
+            }
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "addition",
+            "value": 3
+        }
+    },
+    "diamond_hoe": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:diamond_hoe"
+                }
+            }
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "addition",
+            "value": 6
+        }
+    },
+    "netherite_hoe": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:netherite_hoe"
+                }
+            }
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "addition",
+            "value": 7
+        }
+    }
+}

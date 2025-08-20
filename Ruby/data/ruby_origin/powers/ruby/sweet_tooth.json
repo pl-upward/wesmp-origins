@@ -1,0 +1,27 @@
+{
+    "name": "Sweet Tooth",
+    "description": "Can eat sugar to restore hunger, but can only eat sweets!",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:food"
+            },
+            {
+                "inverted": true,
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "ruby_origin:sweets"
+                }
+            },
+            {
+                "inverted": true,
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "origins:ignore_diet"
+                }
+            }
+        ]
+    }
+}

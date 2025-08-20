@@ -1,0 +1,21 @@
+{
+    "name": "Ruby",
+    "description": "A kind girl.",
+    "powers": [
+        "ruby_origin:ruby/crescent_rose",
+        "ruby_origin:ruby/petal_burst",
+        "ruby_origin:ruby/silver_eyes_toggle",
+        "ruby_origin:ruby/glass_cannon",
+        "ruby_origin:ruby/sweet_tooth",
+        "ruby_origin:ruby/ruby_scale",
+        "ruby_origin:ruby/transgender_affinity",
+        "ruby_origin:ruby/two_handed",
+        "ruby_origin:ruby/eat_sugar",
+        "ruby_origin:ruby/silver_eyes"
+    ],
+    "icon": {
+        "item": "minecraft:netherite_hoe"
+    },
+    "unchoosable": true,
+    "impact": 3
+}

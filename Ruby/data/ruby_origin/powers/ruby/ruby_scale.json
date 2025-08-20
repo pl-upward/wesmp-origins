@@ -1,0 +1,14 @@
+{
+    "name": "Lil Sis",
+    "description": "You are slightly smaller and take less fall damage.",
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+        "type": "origins:execute_command",
+        "command": "function ruby_origin:size_funcs/size_ruby"
+    },
+    "execute_chosen_when_orb": true,
+    "entity_action_lost": {
+        "type": "origins:execute_command",
+        "command": "function ruby_origin:size_funcs/unsize"
+    }
+}

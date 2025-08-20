@@ -1,0 +1,61 @@
+{
+    "name": "eat_sugar",
+    "description": "yummy",
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:sugar"
+                            }
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "offhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:sugar"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "origins:food_level",
+                "comparison": "<",
+                "compare_to": 20
+            }
+        ]
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:play_sound",
+                "sound": "entity.player.burp",
+                "volume": 1,
+                "pitch": 1
+            },
+            {
+                "type": "origins:feed",
+                "food": 6,
+                "saturation": 0.1
+            }
+        ]
+    },
+    "cooldown": 50,
+    "key": {
+        "key": "key.use"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "petal_burst_effect",
+    "description": "descrption",
+    "hidden": true,
+    "type": "origins:particle",
+    "particle": {
+        "type": "minecraft:dust",
+        "params": "0.9 0.1 0.1 1"
+    },
+    "frequency": 1,
+    "count": 10,
+    "speed": 0,
+    "spread": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+    },
+    "offset_y": 1,
+    "visible_in_first_person": true,
+    "visible_while_invisible": true
+}

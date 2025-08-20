@@ -1,0 +1,7 @@
+{
+    "origins": [
+        "ruby_origin:ruby"
+    ],
+    "enabled": true,
+    "name": "origin"
+}

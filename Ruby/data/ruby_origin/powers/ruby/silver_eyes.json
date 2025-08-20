@@ -1,0 +1,51 @@
+{
+    "name": "silver ey",
+    "description": "teh silvereyes",
+    "hidden": true,
+    "type": "origins:multiple",
+    "night_vision": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:submerged_in",
+                    "fluid": "minecraft:water"
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "ruby_origin:ruby/silver_eyes_toggle"
+                }
+            ]
+        },
+        "type": "origins:night_vision",
+        "strength": 1
+    },
+    "particles": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:submerged_in",
+                    "fluid": "minecraft:water"
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "ruby_origin:ruby/silver_eyes_toggle"
+                }
+            ]
+        },
+        "type": "origins:particle",
+        "particle": "minecraft:wax_off",
+        "frequency": 10,
+        "count": 2,
+        "speed": 0,
+        "spread": {
+            "x": 0.06,
+            "y": 0,
+            "z": 0.15
+        },
+        "offset_y": 1.4
+    }
+}

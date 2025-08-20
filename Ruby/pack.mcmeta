@@ -1,0 +1,9 @@
+{
+    "pack": {
+        "name": "Ruby Origin",
+        "id": "ruby_origin",
+        "pack_format": 15,
+        "version": "1.10.0",
+        "description": ""
+    }
+}

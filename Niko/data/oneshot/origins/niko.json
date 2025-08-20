@@ -3,6 +3,7 @@
     "description": "A bright-eyed child with a curious heart, Niko was summoned to play the role of the Sun-Bearer and Messiah.",
     "powers": [
         "oneshot:niko/lightbulb",
+        "oneshot:niko/lightbulb-attack",
         "oneshot:niko/niko_nightvision",
         "oneshot:niko/niko_speed",
         "oneshot:niko/niko_size",

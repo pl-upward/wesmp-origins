@@ -3,7 +3,7 @@
 !*/
 !.gitignore
 
-!.json
-!.mcfunction
-!.mcmeta
-!.png
+!*.json
+!*.mcfunction
+!*.mcmeta
+!*.png

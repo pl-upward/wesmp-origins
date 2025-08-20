@@ -19,13 +19,13 @@
 						"effects": [
 							{
 								"effect": "minecraft:weakness",
-								"duration": 619,
+								"duration": 319,
 								"show_particles": true,
 								"show_icon": true
 							},
 							{
 								"effect": "minecraft:blindness",
-								"duration": 619,
+								"duration": 319,
 								"show_particles": true,
 								"show_icon": true
 							},
@@ -68,7 +68,7 @@
 			}
 		}
 	},
-	"cooldown": 1200,
+	"cooldown": 600,
 	"hud_render": {
 		"should_render": true,
 		"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",

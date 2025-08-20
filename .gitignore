@@ -1,0 +1,9 @@
+# Ignore all, except directories so we can find accepted files.
+*
+!*/
+!.gitignore
+
+!.json
+!.mcfunction
+!.mcmeta
+!.png

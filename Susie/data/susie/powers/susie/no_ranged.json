@@ -1,0 +1,11 @@
+{
+    "name": "No way, dude.",
+    "description": "You don't know how to use an ranged weapons, and don't want to learn.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "susie:ranged"
+        }
+    }
+}

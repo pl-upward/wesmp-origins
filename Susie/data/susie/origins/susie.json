@@ -1,0 +1,20 @@
+{
+    "name": "§5§lThe Monster",
+    "description": "The girl with hope crossed on her heart.",
+    "powers": [
+        "susie:susie/tp",
+        "susie:susie/tp_from_hit",
+        "susie:susie/rude_buster",
+        "susie:susie/heal",
+        "susie:susie/no_ranged",
+        "susie:susie/no_swords",
+        "susie:susie/villager_fear",
+        "susie:susie/appetite",
+        "susie:susie/iron_gut",
+        "susie:susie/setup"
+    ],
+    "icon": {
+        "item": "aether:zanite_axe"
+    },
+    "impact": 3
+}

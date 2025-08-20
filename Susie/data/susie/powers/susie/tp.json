@@ -1,0 +1,136 @@
+{
+    "name": "§0§nTension Points (TP)",
+    "description": "§0§lTP§r is your way of casting magic. You gain §0§lTP§r for blocking, landing hit and criticals, and grazing enemies and projectiles.",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 100,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 18,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "susie:susie/tp_resource",
+                "comparison": ">",
+                "compare_to": 0
+            }
+        }
+    },
+    "from_blocking": {
+        "condition": {
+            "type": "origins:using_item",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:shield"
+                }
+            }
+        },
+        "type": "origins:action_over_time",
+        "interval": 120,
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "resource": "susie:susie/tp_resource",
+            "modifier": {
+                "operation": "add_base_early",
+                "value": 16
+            }
+        }
+    },
+    "from_glowstone": {
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:modify_resource",
+                    "resource": "susie:susie/tp_resource",
+                    "modifier": {
+                        "operation": "addition",
+                        "value": 40
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.amethyst_block.chime",
+                    "volume": 0.4,
+                    "pitch": 1
+                }
+            ]
+        },
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:glowstone_dust"
+            }
+        },
+        "trigger": "instant",
+        "priority": 0
+    },
+    "from_graze": {
+        "type": "origins:action_over_time",
+        "interval": 3,
+        "entity_action": {
+            "type": "origins:area_of_effect",
+            "radius": 3,
+            "bientity_condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:target_condition",
+                        "condition": {
+                            "type": "origins:or",
+                            "conditions": [
+                                {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:in_tag",
+                                            "tag": "susie:projectiles"
+                                        },
+                                        {
+                                            "type": "origins:nbt",
+                                            "nbt": "{inGround:0b}"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:in_tag",
+                                            "tag": "susie:hostile_mobs"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "bientity_action": {
+                "type": "origins:actor_action",
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:modify_resource",
+                            "resource": "susie:susie/tp_resource",
+                            "modifier": {
+                                "operation": "addition",
+                                "value": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

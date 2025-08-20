@@ -5,7 +5,7 @@
         "minecraft:creeper",
         "minecraft:elder_guardian",
         "minecraft:endermite",
-        "minecraft:illager",
+        "minecraft:pillager",
         "minecraft:evoker",
         "minecraft:ghast",
         "minecraft:guardian",
@@ -31,6 +31,8 @@
         "minecraft:ender_dragon",
         "minecraft:wither",
         "aether:aechor_plant",
-        "aether:cockatrice"
+        "aether:cockatrice",
+        "friendsandfoes:iceologer",
+        "friendsandfoes:wildfire"
     ]
 }

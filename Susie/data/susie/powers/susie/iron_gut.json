@@ -1,0 +1,63 @@
+{
+    "name": "Iron Gut",
+    "description": "Most things are edible. Even if they shouldn't be.",
+    "type": "origins:multiple",
+    "effect_immunity": {
+        "type": "origins:effect_immunity",
+        "effects": [
+            "minecraft:poison",
+            "minecraft:hunger",
+            "minecraft:nausea"
+        ]
+    },
+    "chalk": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                }
+            ]
+        },
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:feed",
+                    "food": 8,
+                    "saturation": 0.5
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.player.burp",
+                    "volume": 0.5,
+                    "pitch": 1
+                }
+            ]
+        },
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "item_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "susie:susie_food"
+                    }
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "minecraft:flowers"
+                    }
+                }
+            ]
+        },
+        "trigger": "instant",
+        "priority": 0
+    }
+}

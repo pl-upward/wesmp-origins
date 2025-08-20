@@ -1,0 +1,21 @@
+{
+    "name": "Susiezilla",
+    "description": "Villagers are afraid of you and will not trade with you.",
+    "type": "origins:prevent_entity_use",
+    "bientity_condition": {
+        "type": "origins:target_condition",
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:entity_type",
+                    "entity_type": "minecraft:wandering_trader"
+                },
+                {
+                    "type": "origins:entity_type",
+                    "entity_type": "minecraft:villager"
+                }
+            ]
+        }
+    }
+}

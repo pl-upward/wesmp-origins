@@ -1,0 +1,15 @@
+{
+    "name": "setup",
+    "description": "wows",
+    "hidden": true,
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+        "type": "origins:execute_command",
+        "command": "function susie:susie_setup"
+    },
+    "execute_chosen_when_orb": true,
+    "entity_action_lost": {
+        "type": "origins:execute_command",
+        "command": "function susie:unsize"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "values": [
+        "minecraft:wooden_axe",
+        "minecraft:stone_axe",
+        "minecraft:iron_axe",
+        "minecraft:golden_axe",
+        "minecraft:diamond_axe",
+        "minecraft:netherite_axe",
+        "aether:skyroot_axe",
+        "aether:holystone_axe",
+        "aether:zanite_axe",
+        "aether:gravitite_axe",
+        "aether:valkyrie_axe",
+        "aquaculture:neptunium_axe"
+    ]
+}

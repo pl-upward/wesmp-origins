@@ -1,0 +1,16 @@
+{
+    "values": [
+        "minecraft:arrow",
+        "minecraft:spectral_arrow",
+        "minecraft:fireball",
+        "minecraft:llama_spit",
+        "minecraft:egg",
+        "minecraft:snowball",
+        "minecraft:small_fireball",
+        "minecraft:potion",
+        "minecraft:trident",
+        "minecraft:wither_skull",
+        "minecraft:dragon_fireball",
+        "minecraft:shulker_bullet"
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "name": "What is this? A toothpick?",
+    "description": "You can only use axes.",
+    "type": "origins:multiple",
+    "dmg": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "susie:swords"
+                }
+            }
+        },
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "-4",
+            "operation": "addition"
+        },
+        "tick_rate": 20,
+        "update_health": true
+    },
+    "display": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "susie:swords"
+            }
+        }
+    }
+}

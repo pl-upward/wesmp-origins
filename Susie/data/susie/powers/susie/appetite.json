@@ -1,0 +1,55 @@
+{
+    "type": "origins:multiple",
+    "modify_food": {
+        "type": "origins:modify_food",
+        "item_condition": {
+            "type": "origins:food"
+        },
+        "food_modifier": {
+            "operation": "set_total",
+            "value": 8
+        },
+        "saturation_modifier": {
+            "operation": "set_total",
+            "value": 0.5
+        },
+        "always_edible": true
+    },
+    "regen": {
+        "type": "origins:modify_healing",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 0.5
+        }
+    },
+    "exhaustion": {
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 0.5
+        }
+    },
+    "health": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "multiply_base",
+            "value": 0.2
+        },
+        "update_health": true
+    },
+    "name": "Massive Appetite",
+    "description": "You are always a little hungry and NEVER a picky eater.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "Your natural regeneration is slowed and you gain hunger faster."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "You receive the same amount of hunger from all foods."
+        }
+    ]
+}

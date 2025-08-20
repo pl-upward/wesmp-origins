@@ -16,12 +16,12 @@
 					"type": "origins:target_action",
 					"action": {
 						"type": "origins:apply_effect",
-							"effect": {
-								"effect": "minecraft:glowing",
-								"duration": 620,
-								"show_particles": false,
-								"show_icon": true
-							}
+						"effect": {
+							"effect": "minecraft:glowing",
+							"duration": 620,
+							"show_particles": false,
+							"show_icon": true
+						}
 					}
 				}
 			},
@@ -35,13 +35,32 @@
 				"bientity_action": {
 					"type": "origins:target_action",
 					"action": {
-						"type": "origins:apply_effect",
-						"effect": {
-							"effect": "minecraft:night_vision",
-							"duration": 12000,
-							"show_particles": false,
-							"show_icon": true
-						}
+						"type": "origins:and",
+						"actions": [
+							{
+								"type": "origins:apply_effect",
+								"effect": {
+									"effect": "minecraft:night_vision",
+									"duration": 12000,
+									"show_particles": false,
+									"show_icon": true
+								}
+							},
+							{
+								"type": "origins:grant_power",
+								"power": "oneshot:niko/lightbulb_effects",
+								"source": "0"
+							},
+							{
+								"type": "origins:delay",
+								"action": {
+									"type": "origins:revoke_power",
+									"power": "oneshot:niko/lightbulb_effects",
+									"source": "0"
+								},
+								"ticks": 12000
+							}
+						]
 					}
 				}
 			},
@@ -60,20 +79,6 @@
 					"pitch": 2
 				},
 				"ticks": 5
-			},
-			{
-				"type": "origins:grant_power",
-				"power": "oneshot:niko/lightbulb_effects",
-				"source": "0"
-			},
-			{
-				"type": "origins:delay",
-				"action": {
-					"type": "origins:revoke_power",
-					"power": "oneshot:niko/lightbulb_effects",
-					"source": "0"
-				},
-				"ticks": 12000
 			}
 		]
 	},

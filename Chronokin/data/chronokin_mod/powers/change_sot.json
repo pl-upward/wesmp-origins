@@ -1,0 +1,26 @@
+{
+    "name": "wahat",
+    "description": "you shouldnt see this",
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "interval": 5,
+    "entity_action": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:power_active",
+            "power": "chronokin_mod:toggle_ff"
+        },
+        "if_action": {
+            "type": "origins:change_resource",
+            "resource": "chronokin_mod:sands_of_time",
+            "change": -3,
+            "operation": "add"
+        },
+        "else_action": {
+            "type": "origins:change_resource",
+            "resource": "chronokin_mod:sands_of_time",
+            "change": 6,
+            "operation": "add"
+        }
+    }
+}

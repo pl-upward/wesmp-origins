@@ -1,0 +1,20 @@
+{
+    "name": "Chronokin",
+    "description": "You escaped the loop, now live your life, chronos-blessed one.",
+    "powers": [
+        "chronokin_mod:fast_forward",
+        "chronokin_mod:paranoia",
+        "chronokin_mod:rewind",
+        "chronokin_mod:weakarms",
+        "chronokin_mod:toggle_ff",
+        "chronokin_mod:sands_of_time",
+        "chronokin_mod:change_sot",
+        "chronokin_mod:fragile"
+    ],
+    "icon": {
+        "item": "minecraft:clock",
+        "amount": 1
+    },
+    "order": 99,
+    "impact": 2
+}

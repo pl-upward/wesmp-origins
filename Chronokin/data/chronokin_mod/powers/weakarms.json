@@ -1,0 +1,19 @@
+{
+    "name": "Weak Arms",
+    "description": "Your muscle fibers are still stuck on that day, leaving you too weak to wield a shield or bow. ",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": [
+            {
+                "item": "minecraft:shield"
+            },
+            {
+                "item": "minecraft:bow"
+            },
+            {
+                "item": "minecraft:crossbow"
+            }
+        ]
+    }
+}

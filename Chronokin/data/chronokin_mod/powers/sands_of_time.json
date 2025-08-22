@@ -1,0 +1,27 @@
+{
+    "name": "Sands of Time",
+    "description": "You passively absorb the ebb and flow of time around yourself, to be used on your abilities.",
+    "type": "origins:resource",
+    "min": 0,
+    "max": 10000,
+    "start_value": 0,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/resource_bar.png",
+        "bar_index": 0
+    },
+    "min_action": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:power_active",
+            "power": "chronokin_mod:toggle_ff"
+        },
+        "if_action": {
+            "type": "origins:toggle",
+            "power": "chronokin_mod:toggle_ff"
+        },
+        "else_action": {
+            "type": "origins:nothing"
+        }
+    }
+}

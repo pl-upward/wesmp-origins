@@ -1,0 +1,10 @@
+{
+    "name": "Water Walk",
+    "description": "Why not I guess.",
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+    "retain_state": true
+}

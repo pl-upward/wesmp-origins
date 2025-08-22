@@ -1,0 +1,31 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "key0": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "hyperspeed:jump_boost"
+        },
+        "type": "origins:modify_jump",
+        "modifier": {
+            "operation": "addition",
+            "value": 0.4
+        }
+    },
+    "key1": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "hyperspeed:jump_boost"
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/misc/nausea.png",
+        "strength": 0.7,
+        "red": 0.2,
+        "green": 0.4,
+        "blue": 0.2,
+        "draw_mode": "nausea",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true
+    }
+}

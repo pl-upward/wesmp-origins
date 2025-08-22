@@ -40,7 +40,7 @@
                     "count": 1,
                     "speed": 3,
                     "divergence": 1,
-                    "tag": "{damage:21.0,NoGravity:1b,pickup:0b}",
+                    "tag": "{damage:7.0,NoGravity:1b,pickup:0b}",
                     "projectile_action": {
                         "type": "origins:execute_command",
                         "command": "data merge entity @s {pickup:0b}"
@@ -102,7 +102,7 @@
                     "count": 1,
                     "speed": 3,
                     "divergence": 1,
-                    "tag": "{damage:27.0,NoGravity:1b,pickup:0b}",
+                    "tag": "{damage:9.0,NoGravity:1b,pickup:0b}",
                     "projectile_action": {
                         "type": "origins:execute_command",
                         "command": "data merge entity @s {pickup:0b}"
@@ -164,7 +164,7 @@
                     "count": 1,
                     "speed": 3,
                     "divergence": 1,
-                    "tag": "{damage:30.0,NoGravity:1b,pickup:0b}",
+                    "tag": "{damage:10.0,NoGravity:1b,pickup:0b}",
                     "projectile_action": {
                         "type": "origins:execute_command",
                         "command": "data merge entity @s {pickup:0b}"

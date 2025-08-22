@@ -1,0 +1,18 @@
+{
+    "name": "Hyperspeed",
+    "description": "Faster than a speeding bullet.",
+    "powers": [
+        "hyperspeed:full_auto",
+        "hyperspeed:fuller_auto",
+        "hyperspeed:daredevil",
+        "hyperspeed:jump_boost",
+        "hyperspeed:jump_active",
+        "hyperspeed:water_walk",
+        "hyperspeed:ww_active",
+        "hyperspeed:nerf"
+    ],
+    "icon": {
+        "item": "minecraft:sugar"
+    },
+    "impact": 1
+}

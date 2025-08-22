@@ -1,0 +1,6 @@
+{
+    "name": "Daredevil",
+    "description": "You aint scared of no heights.",
+    "type": "origins:modify_falling",
+    "take_fall_damage": false
+}

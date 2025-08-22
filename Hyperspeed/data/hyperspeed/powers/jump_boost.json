@@ -1,0 +1,10 @@
+{
+    "name": "Jump Boost",
+    "description": "You can run vertically. (What do you mean it's called \"jumping?\")",
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+        "key": "key.origins.primary_active"
+    },
+    "retain_state": true
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Paranoia",
+    "description": "Paranoid about being trapped in a loop once more, you can't bring yourself to sleep.",
+    "type": "origins:prevent_sleep",
+    "message": "I can't get stuck again.",
+    "set_spawn_point": false
+}

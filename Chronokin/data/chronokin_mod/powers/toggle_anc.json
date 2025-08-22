@@ -1,0 +1,6 @@
+{
+    "name": "what",
+    "description": "if you're seeing this, something went wrong. this is the toggle for the anchor ability.",
+    "hidden": true,
+    "type": "origins:simple"
+}

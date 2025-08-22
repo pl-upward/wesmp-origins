@@ -1,0 +1,17 @@
+{
+    "name": "what",
+    "description": "you shouldnt see this. it's the toggle for fast forward",
+    "hidden": true,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "chronokin_mod:sands_of_time",
+        "comparison": ">",
+        "compare_to": 1
+    },
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+        "key": "key.origins.primary_active"
+    },
+    "retain_state": false
+}

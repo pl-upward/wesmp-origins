@@ -1,0 +1,12 @@
+{
+    "name": "Fragile",
+    "description": "You're naturally more frail.",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.max_health",
+        "operation": "addition",
+        "value": -2,
+        "name": "Fragility"
+    },
+    "update_health": true
+}

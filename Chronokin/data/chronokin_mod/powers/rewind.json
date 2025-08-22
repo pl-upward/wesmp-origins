@@ -1,0 +1,102 @@
+{
+    "name": "Rewind",
+    "description": "In the event of your untimely demise, you are not allowed to die. Rewind your body's wounds, and try again.",
+    "condition": {
+        "type": "origins:resource",
+        "resource": "chronokin_mod:sands_of_time",
+        "comparison": ">",
+        "compare_to": 1000
+    },
+    "type": "origins:prevent_death",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:change_resource",
+                "resource": "chronokin_mod:sands_of_time",
+                "change": -1000,
+                "operation": "add"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.amethyst_block.chime",
+                "volume": 1,
+                "pitch": 1
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.amethyst_block.resonate",
+                "volume": 1,
+                "pitch": 1
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.bell.resonate",
+                "volume": 1,
+                "pitch": 1
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.bell.use",
+                "volume": 1,
+                "pitch": 0
+            },
+            {
+                "type": "origins:spawn_particles",
+                "particle": "minecraft:flash",
+                "count": 1
+            },
+            {
+                "type": "origins:spawn_particles",
+                "particle": "minecraft:large_smoke",
+                "count": 25,
+                "speed": 0.25,
+                "spread": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:regeneration",
+                    "duration": 50,
+                    "amplifier": 255,
+                    "show_particles": false,
+                    "show_icon": false
+                }
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:saturation",
+                    "duration": 50,
+                    "amplifier": 255,
+                    "show_particles": false,
+                    "show_icon": false
+                }
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:weakness",
+                    "duration": 300,
+                    "amplifier": 1,
+                    "show_particles": false,
+                    "show_icon": false
+                }
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:slowness",
+                    "duration": 300,
+                    "amplifier": 1,
+                    "show_particles": false,
+                    "show_icon": false
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "pack": {
+        "name": "Chronokin Origin",
+        "id": "chronokin_mod",
+        "pack_format": 15,
+        "version": "2.1.27",
+        "authors": [
+            "Mortomi"
+        ],
+        "description": "An origin datapack created for the WesMP (Weswhip's minecraft server; check him out!)"
+    }
+}

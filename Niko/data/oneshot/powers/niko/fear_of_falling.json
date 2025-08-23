@@ -1,6 +1,6 @@
 {
-    "name": "§c§n§lScared of Heights",
-    "description": "§3Climbing a ladder§f or §3falling from a moderate height§f causes §cweakness§r and §cblindness.§r                        ",
+    "name": "§4§lScared of Heights",
+    "description": "§3Climbing a ladder§f or §3falling from a moderate height§f causes §4weakness§r and §4blindness.§r                        ",
     "type": "origins:multiple",
 	"darkness": {
 		"condition": {

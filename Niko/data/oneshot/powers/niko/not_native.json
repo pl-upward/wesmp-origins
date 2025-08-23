@@ -1,6 +1,6 @@
 {
-	"name": "§c§n§lMessiah emergence",
-	"description": "§fYou are not of this world and§c cannot change your spawnpoint.§r§f When you spawn you will be placed at a §3random location in the world.§r",
+	"name": "§4§lMessiah emergence",
+	"description": "§fYou are not of this world and§4 cannot change your spawnpoint.§r§f When you spawn you will be placed at a §3random location in the world.§r",
 	"type": "origins:multiple",
 	"disable_anchor": {
 		"type": "origins:prevent_block_use",

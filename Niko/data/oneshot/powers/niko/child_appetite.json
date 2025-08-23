@@ -1,6 +1,6 @@
 {
-	"name": "§c§n§lHearty appetite",
-	"description": "§fHow can you be a messiah on an empty stomach? You§c cannot sprint at half hunger§r§f and§c gain slowness below half hunger.§r                        ",
+	"name": "§4§lHearty appetite",
+	"description": "§fHow can you be a messiah on an empty stomach? You§4 cannot sprint at half hunger§r§f and§4 gain slowness below half hunger.§r                        ",
 	"type": "origins:multiple",
 	"prevent_sprint_lowhunger": {
 		"condition": {

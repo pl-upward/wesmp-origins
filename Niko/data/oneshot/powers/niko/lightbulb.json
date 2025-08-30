@@ -45,20 +45,6 @@
 									"show_particles": false,
 									"show_icon": true
 								}
-							},
-							{
-								"type": "origins:grant_power",
-								"power": "oneshot:niko/lightbulb_effects",
-								"source": "0"
-							},
-							{
-								"type": "origins:delay",
-								"action": {
-									"type": "origins:revoke_power",
-									"power": "oneshot:niko/lightbulb_effects",
-									"source": "0"
-								},
-								"ticks": 12000
 							}
 						]
 					}

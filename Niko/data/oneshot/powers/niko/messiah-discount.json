@@ -5,7 +5,7 @@
 	"interval": 18,
 	"entity_action": {
 		"type": "origins:area_of_effect",
-		"radius": 8,
+		"radius": 16,
 		"bientity_condition": {
 			"type": "origins:target_condition",
 			"condition": {

@@ -1,6 +1,6 @@
 {
 	"name": "§2§lMessiah's favor§r§7",
-	"description": "§fThe natives of this world recognize the importance of your mission and offer you §2reduced prices§f at villages								§r",
+	"description": "§fThe natives of this world recognize the importance of your mission and offer you §2reduced prices§f.                                §r",
 	"type": "origins:action_over_time",
 	"interval": 18,
 	"entity_action": {

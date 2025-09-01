@@ -1,6 +1,6 @@
 {
     "name": "§2§lOn little cat feet",
-    "description": "§fYou have §2increased movement speed§r§f and §2reduced fall damage.§r               ",
+    "description": "§fYou have §2increased movement speed§r§f and §2reduced fall damage§f.§r               ",
     "type": "origins:multiple",
     "air_speed": {
         "type": "origins:attribute_modify_transfer",

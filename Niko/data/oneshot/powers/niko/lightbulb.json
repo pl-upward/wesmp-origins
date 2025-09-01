@@ -1,6 +1,6 @@
 {
 	"name": "§e§lLightbearer",
-	"description": "§fAs the messiah you have access to a large lightbulb, it's the §e§l§nSun!§r§f Press your primary ability key to §2illuminate nearby creatures§r §3(including yourself)§r§f which grants them §2night vision§r§f and causes them to §2start glowing.§r               ",
+	"description": "§fAs the messiah you have access to a large lightbulb, it's the §e§l§nSun!§r§f Press your primary ability key to §2illuminate nearby creatures§r §3(including yourself)§r§f which grants them §2night vision§r§f and causes them to §2start glowing§f.§r               ",
 	"type": "origins:active_self",
 	"entity_action": {
 		"type": "origins:and",
@@ -45,20 +45,6 @@
 									"show_particles": false,
 									"show_icon": true
 								}
-							},
-							{
-								"type": "origins:grant_power",
-								"power": "oneshot:niko/lightbulb_effects",
-								"source": "0"
-							},
-							{
-								"type": "origins:delay",
-								"action": {
-									"type": "origins:revoke_power",
-									"power": "oneshot:niko/lightbulb_effects",
-									"source": "0"
-								},
-								"ticks": 12000
 							}
 						]
 					}

@@ -1,6 +1,6 @@
 {
     "name": "§4§lScared of Heights",
-    "description": "§fClimbing a ladder or falling from a moderate height causes §4weakness§r and §4blindness§f.§r                        ",
+    "description": "§fClimbing a ladder or falling from a moderate height causes §4weakness§r and §4blindness§f. Using an elytra slowly §4drains hunger.§f§r                                                ",
     "type": "origins:multiple",
 	"darkness": {
 		"type": "origins:stacking_status_effect",
@@ -47,7 +47,7 @@
 		]
 	},
 	"shaking": {
-	    "type": "origins:shaking",
+		"type": "origins:shaking",
 		"condition": {
 			"type": "origins:fall_distance",
 			"comparison": ">=",
@@ -60,6 +60,14 @@
 			"type": "origins:fall_distance",
 			"comparison": ">=",
 			"compare_to": 19
+		}
+	},
+	"elytra-exhaustion": {
+		"type": "origins:exhaust",
+		"interval": 7,
+		"exhaustion": 0.2,
+		"condition": {
+			"type": "origins:fall_flying"
 		}
 	}
 }

@@ -1,0 +1,61 @@
+{
+    "name": "Knife Skills",
+    "description": "You can throw any knife by right clicking.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "Your knife throw always deals 10 damage (5 hearts)"
+        }
+    ],
+    "type": "origins:multiple",
+    "throw": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "rogue:rogue/knife_cooldown",
+            "comparison": "<=",
+            "compare_to": 0
+        },
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:fire_projectile",
+                    "entity_type": "minecraft:arrow",
+                    "count": 1,
+                    "speed": 3,
+                    "divergence": 1,
+                    "tag": "{damage:3.5,pickup:0b}"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "item.trident.throw",
+                    "volume": 0.6,
+                    "pitch": 1.3
+                },
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "rogue:rogue/knife_cooldown"
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "rogue:knives"
+            }
+        },
+        "trigger": "instant",
+        "priority": 0
+    },
+    "cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 80,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 1
+        }
+    }
+}

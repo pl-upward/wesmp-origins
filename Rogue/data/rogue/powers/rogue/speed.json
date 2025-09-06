@@ -1,0 +1,21 @@
+{
+    "name": "Nimble",
+    "description": "You run and jump very fast.",
+    "type": "origins:multiple",
+    "move_speed": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_base",
+            "value": 0.17
+        },
+        "update_health": true
+    },
+    "air_speed": {
+        "type": "origins:modify_air_speed",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 0.5
+        }
+    }
+}

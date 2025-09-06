@@ -1,0 +1,11 @@
+{
+    "name": "Fragile Body",
+    "description": "You have one less heart.",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.max_health",
+        "operation": "addition",
+        "value": -2
+    },
+    "update_health": true
+}

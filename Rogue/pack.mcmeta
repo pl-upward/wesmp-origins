@@ -1,0 +1,12 @@
+{
+    "pack": {
+        "name": "Rogue Origin",
+        "id": "rogue",
+        "pack_format": 15,
+        "version": "1.0.0",
+        "authors": [
+            "pl-upward"
+        ],
+        "description": "Adds the rogue origin to the game."
+    }
+}

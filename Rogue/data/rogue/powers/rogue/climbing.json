@@ -1,0 +1,69 @@
+{
+    "name": "Expert Climber",
+    "description": "You can scale any wall.",
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": true,
+        "key": {
+            "key": "key.origins.secondary_active",
+            "continuous": false
+        },
+        "retain_state": true
+    },
+    "climbing": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "rogue:rogue/climbing_toggle"
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "inverted": true,
+                                    "type": "origins:sneaking"
+                                },
+                                {
+                                    "type": "origins:collided_horizontally"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:sneaking"
+                                },
+                                {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:block_collision",
+                                            "offset_x": 0.01,
+                                            "offset_y": 0,
+                                            "offset_z": 0.01
+                                        },
+                                        {
+                                            "type": "origins:block_collision",
+                                            "offset_x": -0.01,
+                                            "offset_y": 0,
+                                            "offset_z": -0.01
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "type": "origins:climbing",
+        "allow_holding": true
+    }
+}

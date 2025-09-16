@@ -1,0 +1,9 @@
+{
+    "name": "Stormtrooper Aim",
+    "description": "You deal less damage with ranged weapons. Can't beat the shit outta someone without getting closer.",
+    "type": "origins:modify_projectile_damage",
+    "modifier": {
+        "operation": "multiply_base_additive",
+        "value": -0.5
+    }
+}

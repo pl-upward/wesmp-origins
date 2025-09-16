@@ -1,6 +1,6 @@
 {
-    "name": "Jump Boost",
-    "description": "You can run vertically. (What do you mean it's called \"jumping?\")",
+    "name": "Fuller Auto",
+    "description": "When using your primary ability key, you run LUDICROUSLY fast.",
     "type": "origins:toggle",
     "active_by_default": false,
     "key": {

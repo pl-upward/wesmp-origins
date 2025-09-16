@@ -1,6 +1,6 @@
 {
-    "name": "Water Walk",
-    "description": "Why not I guess.",
+    "name": "Phasing",
+    "description": "While using your secondary ability key, you can phase through blocks. Because why not I guess.",
     "type": "origins:toggle",
     "active_by_default": false,
     "key": {

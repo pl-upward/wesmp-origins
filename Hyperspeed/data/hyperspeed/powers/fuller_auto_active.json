@@ -1,0 +1,65 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "key0": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "hyperspeed:fuller_auto_toggle"
+        },
+        "type": "origins:modify_attribute",
+        "attribute": "minecraft:generic.movement_speed",
+        "modifier": {
+            "operation": "addition",
+            "value": 0.3
+        }
+    },
+    "key1": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "hyperspeed:fuller_auto_toggle"
+        },
+        "type": "origins:modify_jump",
+        "modifier": {
+            "operation": "addition",
+            "value": 0.6
+        }
+    },
+    "key2": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "hyperspeed:fuller_auto_toggle"
+        },
+        "type": "origins:modify_air_speed",
+        "modifier": {
+            "operation": "addition",
+            "value": 0.05
+        }
+    },
+    "key3": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "hyperspeed:fuller_auto_toggle"
+        },
+        "type": "origins:modify_swim_speed",
+        "modifier": {
+            "operation": "addition",
+            "value": 0.1
+        }
+    },
+    "key4": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "hyperspeed:fuller_auto_toggle"
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/misc/nausea.png",
+        "strength": 0.7,
+        "red": 0.2,
+        "green": 0.4,
+        "blue": 0.2,
+        "draw_mode": "nausea",
+        "draw_phase": "below_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true
+    }
+}

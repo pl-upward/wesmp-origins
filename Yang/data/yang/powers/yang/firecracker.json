@@ -1,0 +1,43 @@
+{
+    "name": "Firecracker",
+    "description": "You are immune to fire. Being on fire increases your attack.",
+    "type": "origins:multiple",
+    "fire_immunity": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:fire"
+        }
+    },
+    "fist_buff_on_fire": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:on_fire"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                }
+            ]
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "addition",
+            "value": 3
+        }
+    },
+    "buff_on_fire": {
+        "condition": {
+            "type": "origins:on_fire"
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "addition",
+            "value": 2
+        }
+    }
+}

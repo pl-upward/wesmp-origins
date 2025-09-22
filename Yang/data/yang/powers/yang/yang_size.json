@@ -1,0 +1,14 @@
+{
+    "name": "Big Sis",
+    "description": "Slightly taller to fill your role as a big sister.",
+	"type": "origins:action_on_callback",
+	"entity_action_chosen": {
+		"type": "origins:execute_command",
+		"command": "function yang:size"
+	},
+	"entity_action_lost": {
+		"type": "origins:execute_command",
+		"command": "function yang:unsize"
+	},
+	"execute_chosen_when_orb": true
+}

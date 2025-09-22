@@ -1,0 +1,19 @@
+{
+    "name": "Yang",
+    "description": "An older sister with anger issues.",
+    "powers": [
+        "yang:yang/ember_celica",
+        "yang:yang/firecracker",
+        "yang:yang/burn",
+        "yang:yang/explosive_shells",
+        "yang:yang/severed",
+        "yang:yang/anger_issues",
+        "yang:yang/yang_scale",
+        "yang:yang/yuri"
+    ],
+    "icon": {
+        "item": "minecraft:flint_and_steel",
+        "amount": 1
+    },
+    "impact": 3
+}

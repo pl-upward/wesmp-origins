@@ -1,0 +1,21 @@
+{
+    "name": "Severed",
+    "description": "Unable to wield anything in your offhand.",
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "offhand",
+        "item_condition": {
+            "inverted": true,
+            "type": "origins:empty"
+        }
+    },
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:drop_inventory",
+        "inventory_type": "inventory",
+        "slots": [],
+        "slot": "45",
+        "retain_ownership": true
+    }
+}

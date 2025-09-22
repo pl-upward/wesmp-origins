@@ -1,0 +1,54 @@
+{
+    "name": "Explosive Shells",
+    "description": "You can consume gunpowder to launch yourself opposite the direction you are facing.",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:modify_inventory",
+        "inventory_type": "inventory",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:add_velocity",
+                    "z": -2,
+                    "space": "local",
+                    "client": true,
+                    "server": true,
+                    "set": true
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "entity.generic.explode",
+                    "volume": 2,
+                    "pitch": 1
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "particle": "explosion_emitter",
+                    "count": 1
+                }
+            ]
+        },
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:gunpowder"
+            }
+        },
+        "slots": [],
+        "process_mode": "items",
+        "limit": 1
+    },
+    "cooldown": 10,
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 0
+    },
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "fire_aura",
+    "description": "dont look bo",
+    "type": "origins:particle",
+    "particle": "minecraft:small_flame",
+    "frequency": 5,
+    "count": 20,
+    "speed": 0,
+    "spread": {
+        "x": 0.25,
+        "y": 0.5,
+        "z": 0.25
+    },
+    "offset_y": 1
+}

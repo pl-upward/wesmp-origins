@@ -1,0 +1,12 @@
+{
+    "pack": {
+        "name": "Yang Origin",
+        "id": "yang",
+        "pack_format": 15,
+        "version": "1.1.0",
+        "authors": [
+            "pl-upward"
+        ],
+        "description": "Mack's very own origin. Originally for another server, UnixParadigm ported it to the wesmp!"
+    }
+}

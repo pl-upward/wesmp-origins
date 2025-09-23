@@ -7,7 +7,7 @@
         "attribute": "minecraft:generic.movement_speed",
         "modifier": {
             "operation": "addition",
-            "value": 0.1
+            "value": 0.2
         }
     },
     "key1": {
@@ -22,13 +22,6 @@
         "modifier": {
             "operation": "addition",
             "value": 0.025
-        }
-    },
-    "key3": {
-        "type": "origins:modify_jump",
-        "modifier": {
-            "operation": "addition",
-            "value": 0.1
         }
     }
 }

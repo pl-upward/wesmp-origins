@@ -3,16 +3,16 @@
     "description": "Faster than a speeding bullet.",
     "powers": [
         "hyperspeed:full_auto",
-        "hyperspeed:fuller_auto",
+        "hyperspeed:fuller_auto_toggle",
+        "hyperspeed:fuller_auto_active",
+        "hyperspeed:phasing_toggle",
+        "hyperspeed:phasing_active",
         "hyperspeed:daredevil",
-        "hyperspeed:jump_boost",
-        "hyperspeed:jump_active",
-        "hyperspeed:water_walk",
-        "hyperspeed:ww_active",
-        "hyperspeed:nerf"
+        "hyperspeed:reckless",
+        "hyperspeed:stormtrooper_aim"
     ],
     "icon": {
-        "item": "minecraft:sugar"
+        "item": "minecraft:sugar_cane"
     },
     "impact": 1
 }

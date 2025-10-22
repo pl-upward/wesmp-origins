@@ -1,0 +1,14 @@
+# Nerfs
+#- Exhaustion on elytra usage
+
+# Buffs
+
+# Changes
+- Increased knockback (ukn if possible)
+- Customize heart graphics
+	normal => absorbing
+	https://github.com/misode/mcmeta/tree/assets/assets/minecraft/textures/gui/sprites/hud/heart
+	https://origins.readthedocs.io/en/latest/types/power_types/status_bar_texture/#status_bar_texture
+
+# Reworks
+- Rework lightbulb_attack into a 15cd double jump + slow falling
